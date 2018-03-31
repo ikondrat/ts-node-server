@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ikondrat/ts-node-server.svg?branch=master)](https://travis-ci.org/ikondrat/ts-node-server)
 # ts-node-server
 Boilerplate for writing server-side with TypeScript
 
