@@ -6,13 +6,12 @@
   "scripts": {
     "start": "ts-node src/server.ts",
     "precommit": "lint-staged && npm test",
-    "pretty": "prettier --write --tab-width 4 \"src/**/*.ts\"",
     "test": "jest"
   },
   "lint-staged": {
     "*.ts|tsx": [
       "tslint --fix",
-      "npm run pretty",
+      "prettier --write --tab-width 4",
       "git add"
     ]
   },
