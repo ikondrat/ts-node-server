@@ -1,5 +1,6 @@
-const App = require('./App.ts');
+import * as App from './App';
 
-test('Routes should be defined', () => {
-  expect(App.mountRoutes).toBeDefined;
+it('Has express', () => {
+  const app = new App.default()
+  expect(app.express).toBeInstanceOf(Function);
 });
