@@ -5,7 +5,7 @@
   "main": "greeter.js",
   "scripts": {
     "start": "ts-node src/server.ts",
-    "precommit": "lint-staged",
+    "precommit": "lint-staged && npm test",
     "test": "jest"
   },
   "lint-staged": {
