@@ -1,5 +1,5 @@
 # ts-node-server
-Boolerplate for writing server-side with TypeScript
+Boilerplate for writing server-side with TypeScript
 
 # integrated tools
 * tslint checking
