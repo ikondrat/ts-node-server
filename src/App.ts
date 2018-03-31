@@ -18,5 +18,4 @@ class App {
     this.express.use('/', router)
   }
 }
-
 export default App

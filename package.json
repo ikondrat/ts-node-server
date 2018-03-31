@@ -5,7 +5,14 @@
   "main": "greeter.js",
   "scripts": {
     "start": "ts-node src/server.ts",
+    "precommit": "lint-staged",
     "test": "jest"
+  },
+  "lint-staged": {
+    "*.ts|tsx": [
+      "tslint --fix",
+      "git add"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -18,8 +25,11 @@
   },
   "devDependencies": {
     "@types/jest": "^22.2.2",
+    "husky": "^0.14.3",
     "jest": "^22.4.3",
-    "ts-jest": "^22.4.2"
+    "lint-staged": "^7.0.1",
+    "ts-jest": "^22.4.2",
+    "ts-lint": "^4.5.1"
   },
   "jest": {
     "transform": {
