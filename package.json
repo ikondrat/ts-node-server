@@ -6,11 +6,13 @@
   "scripts": {
     "start": "ts-node src/server.ts",
     "precommit": "lint-staged && npm test",
+    "pretty": "prettier --write --tab-width 4 \"src/**/*.ts\"",
     "test": "jest"
   },
   "lint-staged": {
     "*.ts|tsx": [
       "tslint --fix",
+      "npm run pretty",
       "git add"
     ]
   },
@@ -28,6 +30,7 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "lint-staged": "^7.0.1",
+    "prettier": "^1.11.1",
     "ts-jest": "^22.4.2",
     "ts-lint": "^4.5.1"
   },
